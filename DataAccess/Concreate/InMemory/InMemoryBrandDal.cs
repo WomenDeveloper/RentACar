@@ -35,6 +35,11 @@ namespace DataAccess.Concreate.InMemory
             return _brands;
         }
 
+        public Brand GetById(int id)
+        {
+            return _brands.SingleOrDefault(b => b.BrandId == id);
+        }
+
         public void Update(Brand brand)
         {
             Brand updateToBrand = _brands.SingleOrDefault(b => b.BrandId == brand.BrandId);

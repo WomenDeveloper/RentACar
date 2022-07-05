@@ -17,6 +17,11 @@ namespace Business.Concreate
         {
             return _brandDal.GetAll();
         }
+
+        public Brand GetById(int id)
+        {
+            return _brandDal.GetById(id);
+        }
     }
 }
 

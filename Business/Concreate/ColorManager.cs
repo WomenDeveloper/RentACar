@@ -18,6 +18,11 @@ namespace Business.Concreate
         {
             return _colorDal.GetAll();
         }
+
+        public Color GetById(int id)
+        {
+            return _colorDal.GetById(id);
+        }
     }
 }
 

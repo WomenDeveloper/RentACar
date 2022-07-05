@@ -18,6 +18,11 @@ namespace Business.Concreate
         {
             return _carDal.GetAll();
         }
+
+        public Car GetById(int id)
+        {
+            return _carDal.GetById(id);
+        }
     }
 }
 

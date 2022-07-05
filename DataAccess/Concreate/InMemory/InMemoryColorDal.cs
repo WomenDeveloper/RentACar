@@ -24,6 +24,11 @@ namespace DataAccess.Concreate.InMemory
             return _colors;
         }
 
+        public Color GetById(int id)
+        {
+            return _colors.SingleOrDefault(c=>c.ColorId==id);
+        }
+
         public void Update(Color color)
         {
             Color updateToColor = _colors.SingleOrDefault(c => c.ColorId == color.ColorId);
