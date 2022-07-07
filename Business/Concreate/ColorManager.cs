@@ -21,7 +21,7 @@ namespace Business.Concreate
 
         public Color GetById(int id)
         {
-            return _colorDal.GetById(id);
+            return _colorDal.GetById(c => c.ColorId == id);
         }
     }
 }

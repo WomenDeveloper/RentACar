@@ -20,7 +20,7 @@ namespace Business.Concreate
 
         public Brand GetById(int id)
         {
-            return _brandDal.GetById(id);
+            return _brandDal.GetById(b=>b.BrandId==id);
         }
     }
 }
