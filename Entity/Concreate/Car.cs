@@ -1,6 +1,6 @@
 ﻿using System;
-using Entities.Abstract;
 using System.ComponentModel.DataAnnotations;
+using Core.Entities;
 
 namespace Entities.Concreate
 {
