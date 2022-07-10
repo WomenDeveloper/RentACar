@@ -11,8 +11,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="New Folder\" />
+    <None Remove="Autofac" />
+    <None Remove="Autofac.Extras.DynamicProxy" />
+    <None Remove="DependencyResolvers\" />
+    <None Remove="DependencyResolvers\Autofac\" />
+    <None Remove="Autofac.Extensions.DependencyInjection" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Constants\" />
+    <Folder Include="DependencyResolvers\" />
+    <Folder Include="DependencyResolvers\Autofac\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
   </ItemGroup>
 </Project>
