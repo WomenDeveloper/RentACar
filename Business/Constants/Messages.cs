@@ -15,10 +15,16 @@ namespace Business.Constants
 
         public static string BrandListed = "Listed brands";
         public static string BrandGetById = "get the brand by brand id";
+        public static string BrandAdded = "Added a Brand";
+        public static string BrandDeleted = "Deleted a brand";
+        public static string BrandUpdated = "Updated a brand";
 
         public static string ColorListed = "Listed colors";
         public static string ColorgetById = "get the color by color id";
-        
+        internal static string ColorAdded = "Added a brand";
+        internal static string ColorDeleted = "Deleted a brand";
+        internal static string ColorUpdated = "Updated a brand";
+
         public static string RentalsListed = "listed rentals";
         public static string RentalGeyById = "Successfuly gets rental by id";
         public static string RentalAdded = "Added a rental";
@@ -36,7 +42,7 @@ namespace Business.Constants
         public static string CustomerDeleted = "Deleted a customer";
         public static string CustomerUpdated = "Updated a customer";
         public static string ListedCustomer = "listed  customers";
-        
+
     }
 }
 
