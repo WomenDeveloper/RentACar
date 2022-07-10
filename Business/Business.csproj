@@ -8,4 +8,10 @@
     <ProjectReference Include="..\Entity\Entity.csproj" />
     <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="New Folder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Constants\" />
+  </ItemGroup>
 </Project>

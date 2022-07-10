@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Business.Abstract;
+using Business.Constants;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concreate;
 using Entity.DTOs;
@@ -15,29 +17,48 @@ namespace Business.Concreate
             _carDal = carDal;
         }
 
-        public List<Car> GetAll()
+        public IResult Add(Car car)
         {
-            return _carDal.GetAll();
+            _carDal.Add(car);
+            return new SuccessResult(Messages.CarAdded);
         }
 
-        public Car GetById(int id)
+        public IResult Delete(Car car)
         {
-            return _carDal.GetById(c=> c.CarId==id);
+            _carDal.Delete(car);
+            return new SuccessResult(Messages.CarDeleted);
         }
 
-        public List<CarDetailDto> GetCarDetails()
+        public IDataResult<List<Car>> GetAll()
         {
-            return _carDal.GetCarDetaills();
+            return new DataResult<List<Car>>(_carDal.GetAll(),true,Messages.CarListed);
         }
 
-        public List<Car> GetCarsByBrandId(int brandId)
+        public IDataResult<Car> GetById(int id)
         {
-            return _carDal.GetAll(b=> b.BrandId==brandId);
+            return new SuccessDataResult<Car>(_carDal.GetById(c=> c.CarId==id),Messages.CarGetById);
         }
 
-        public List<Car> GetCarsByColorId(int colorId)
+        public IDataResult<List<CarDetailDto>> GetCarDetails()
         {
-            return _carDal.GetAll(c=>c.ColorId==colorId);
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetaills(),Messages.CarDetails);
+        }
+
+        public IDataResult<List<Car>> GetCarsByBrandId(int brandId)
+        {
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(b=> b.BrandId==brandId),"successfult gets cars by brand ");
+        }
+
+        public IDataResult<List<Car>> GetCarsByColorId(int colorId)
+        {
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(c=>c.ColorId==colorId), "successfult gets cars by color");
+          
+        }
+
+        public IResult Update(Car car)
+        {
+            _carDal.Update(car);
+            return new SuccessResult(Messages.CarUpdated);
         }
     }
 }
