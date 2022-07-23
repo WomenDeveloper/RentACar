@@ -19,6 +19,7 @@
     <None Remove="ValidationRules\" />
     <None Remove="ValidationRules\FluentValidation\" />
     <None Remove="FluentValidation" />
+    <None Remove="Constants\ImagePath\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Constants\" />
@@ -26,6 +27,7 @@
     <Folder Include="DependencyResolvers\Autofac\" />
     <Folder Include="ValidationRules\" />
     <Folder Include="ValidationRules\FluentValidation\" />
+    <Folder Include="Constants\ImagePath\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Autofac" Version="6.4.0" />

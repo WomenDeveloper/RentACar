@@ -42,7 +42,9 @@ namespace Business.Constants
         public static string CustomerDeleted = "Deleted a customer";
         public static string CustomerUpdated = "Updated a customer";
         public static string ListedCustomer = "listed  customers";
-
+        internal static string CarImageUpdated = "Car image updated";
+        internal static string CarImageAdded = "Car Image added";
+        internal static string CarImagesListed = "listed car images";
     }
 }
 

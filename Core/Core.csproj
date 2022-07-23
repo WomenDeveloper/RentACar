@@ -21,6 +21,9 @@
     <None Remove="Aspects\" />
     <None Remove="Aspects\Autofac\" />
     <None Remove="Aspects\Autofac\Validation\" />
+    <None Remove="Business\" />
+    <None Remove="Utilities\Helpers\" />
+    <None Remove="Microsoft.AspNetCore.Http.Features" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAcess\" />
@@ -34,6 +37,8 @@
     <Folder Include="Aspects\" />
     <Folder Include="Aspects\Autofac\" />
     <Folder Include="Aspects\Autofac\Validation\" />
+    <Folder Include="Business\" />
+    <Folder Include="Utilities\Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
@@ -41,5 +46,6 @@
     <PackageReference Include="Autofac" Version="6.4.0" />
     <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.1" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
   </ItemGroup>
 </Project>

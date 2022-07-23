@@ -24,4 +24,16 @@
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\Upload\" />
+    <Content Remove="wwwroot\Uploads\Images\" />
+    <Content Remove="wwwroot\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\Uploads\" />
+    <Folder Include="wwwroot\Uploads\Images\" />
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
 </Project>
