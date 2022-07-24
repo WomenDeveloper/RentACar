@@ -37,6 +37,11 @@
     <None Remove="Entities\DTOs\" />
     <None Remove="DependencyResolver\" />
     <None Remove="Microsoft.AspNetCore.Http" />
+    <None Remove="CrossCuttingConcerns\Caching\" />
+    <None Remove="CrossCuttingConcerns\Caching\Microsoft\" />
+    <None Remove="Aspects\Autofac\Caching\" />
+    <None Remove="CrossCuttingConcerns\Transaction\" />
+    <None Remove="CrossCuttingConcerns\Performance\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAcess\" />
@@ -61,6 +66,11 @@
     <Folder Include="Utilities\IoC\" />
     <Folder Include="Entities\DTOs\" />
     <Folder Include="DependencyResolver\" />
+    <Folder Include="CrossCuttingConcerns\Caching\" />
+    <Folder Include="CrossCuttingConcerns\Caching\Microsoft\" />
+    <Folder Include="Aspects\Autofac\Caching\" />
+    <Folder Include="CrossCuttingConcerns\Transaction\" />
+    <Folder Include="CrossCuttingConcerns\Performance\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
