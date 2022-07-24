@@ -24,6 +24,19 @@
     <None Remove="Business\" />
     <None Remove="Utilities\Helpers\" />
     <None Remove="Microsoft.AspNetCore.Http.Features" />
+    <None Remove="Entities\Concreate\" />
+    <None Remove="Utilities\Security\" />
+    <None Remove="Utilities\Security\Hashing\" />
+    <None Remove="Utilities\Security\JWT\" />
+    <None Remove="Utilities\Security\Encryption\" />
+    <None Remove="Microsoft.IdentityModel.Tokens" />
+    <None Remove="Microsoft.Extensions.Configuration.Binder" />
+    <None Remove="System.IdentityModel.Tokens.Jwt" />
+    <None Remove="Extensions\" />
+    <None Remove="Utilities\IoC\" />
+    <None Remove="Entities\DTOs\" />
+    <None Remove="DependencyResolver\" />
+    <None Remove="Microsoft.AspNetCore.Http" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAcess\" />
@@ -39,6 +52,15 @@
     <Folder Include="Aspects\Autofac\Validation\" />
     <Folder Include="Business\" />
     <Folder Include="Utilities\Helpers\" />
+    <Folder Include="Entities\Concreate\" />
+    <Folder Include="Utilities\Security\" />
+    <Folder Include="Utilities\Security\Hashing\" />
+    <Folder Include="Utilities\Security\JWT\" />
+    <Folder Include="Utilities\Security\Encryption\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Utilities\IoC\" />
+    <Folder Include="Entities\DTOs\" />
+    <Folder Include="DependencyResolver\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
@@ -47,5 +69,9 @@
     <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.1" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.21.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.21.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
   </ItemGroup>
 </Project>

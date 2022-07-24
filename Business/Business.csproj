@@ -20,6 +20,9 @@
     <None Remove="ValidationRules\FluentValidation\" />
     <None Remove="FluentValidation" />
     <None Remove="Constants\ImagePath\" />
+    <None Remove="BusinessAspect\" />
+    <None Remove="BusinessAspect\Autofac\" />
+    <None Remove="Microsoft.AspNetCore.Http.Abstractions" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Constants\" />
@@ -28,11 +31,14 @@
     <Folder Include="ValidationRules\" />
     <Folder Include="ValidationRules\FluentValidation\" />
     <Folder Include="Constants\ImagePath\" />
+    <Folder Include="BusinessAspect\" />
+    <Folder Include="BusinessAspect\Autofac\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Autofac" Version="6.4.0" />
     <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.1" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="FluentValidation" Version="11.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
   </ItemGroup>
 </Project>

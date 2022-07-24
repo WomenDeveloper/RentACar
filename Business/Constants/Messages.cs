@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.Serialization;
+using Core.Entities.Concreate;
 
 namespace Business.Constants
 {
@@ -21,9 +22,9 @@ namespace Business.Constants
 
         public static string ColorListed = "Listed colors";
         public static string ColorgetById = "get the color by color id";
-        internal static string ColorAdded = "Added a brand";
-        internal static string ColorDeleted = "Deleted a brand";
-        internal static string ColorUpdated = "Updated a brand";
+        public static string ColorAdded = "Added a brand";
+        public static string ColorDeleted = "Deleted a brand";
+        public static string ColorUpdated = "Updated a brand";
 
         public static string RentalsListed = "listed rentals";
         public static string RentalGeyById = "Successfuly gets rental by id";
@@ -42,9 +43,16 @@ namespace Business.Constants
         public static string CustomerDeleted = "Deleted a customer";
         public static string CustomerUpdated = "Updated a customer";
         public static string ListedCustomer = "listed  customers";
-        internal static string CarImageUpdated = "Car image updated";
-        internal static string CarImageAdded = "Car Image added";
-        internal static string CarImagesListed = "listed car images";
+        public static string CarImageUpdated = "Car image updated";
+        public static string CarImageAdded = "Car Image added";
+        public static string CarImagesListed = "listed car images";
+        public static string AuthorizationDenied = "Denied Authorization ";
+        internal static string UserRegistered;
+        internal static string UserAlreadyExists;
+        internal static string AccessTokenCreated;
+        internal static User UserNotFound;
+        internal static User PasswordError;
+        internal static string SuccessfulLogin;
     }
 }
 

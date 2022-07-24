@@ -1,4 +1,5 @@
 ﻿using System;
+using Core.Entities.Concreate;
 using Entity.Concreate;
 using FluentValidation;
 
